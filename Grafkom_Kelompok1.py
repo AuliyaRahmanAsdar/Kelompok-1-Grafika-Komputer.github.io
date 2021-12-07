@@ -23,8 +23,8 @@ if x1 == x2:
     Koor_x = []
     Koor_y = []
     for i in range (1,y2,1):
-        grafik.plot(Koor_x,Koor_y)
-        grafik.show()
+        graphic.plot(Koor_x,Koor_y)
+        graphic.show()
         
 # ---> Jika nilai y1 = y2 (garis horizontal), maka :
 #       a. x = x + 1 dan y tetap
