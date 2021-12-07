@@ -20,8 +20,8 @@ y = y1
 #       c. tampilkan garis dari titik-titik koordinat yang terbentuk (selesai)
 
 if x1 == x2:
-    Koor_x = []
-    Koor_y = []
+    koor_x = []
+    koor_y = []
     for i in range (1,y2,1):
         graphic.plot(Koor_x,Koor_y)
         graphic.show()
