@@ -22,7 +22,7 @@ y = y1
 if x1 == x2:
     koor_x = []
     koor_y = []
-    for i in range (1,y2,1):
+    for i in range (0,y2,1):
         print('Garis yang di lewati yaitu', x, ',', y+i)
         koor_x.append(x)
         koor_y.append(y+i)
@@ -37,7 +37,7 @@ if x1 == x2:
 elif y1 == y2:
     koor_x = []
     koor_y = []
-    for i in range (1,x2,1):
+    for i in range (0,x2,1):
         print('Garis yang di lewati yaitu', x+i, ',', y)
         koor_x.append(x+i)
         koor_y.append(y)
