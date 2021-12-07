@@ -34,7 +34,7 @@ if x1 == x2:
 elif y1 == y2:
     koor_x = []
     koor_y = []
-    for i in range (1,y2,1):
+    for i in range (1,x2,1):
         graphic.plot(Koor_x,Koor_y)
         graphic.show()
 # ---> Jika ke-2 syarat di atas tidak memenuhi,  maka proses penentuan titik koordinat berlanjut ke:
