@@ -26,8 +26,8 @@ if x1 == x2:
         print('Garis yang di lewati yaitu', x, ',', y+i)
         koor_x.append(x)
         koor_y.append(y+i)
-        graphic.plot(koor_x,koor_y)
-        graphic.show()
+    graphic.plot(koor_x,koor_y)
+    graphic.show()
         
 # ---> Jika nilai y1 = y2 (garis horizontal), maka :
 #       a. x = x + 1 dan y tetap
@@ -41,8 +41,8 @@ elif y1 == y2:
         print('Garis yang di lewati yaitu', x+i, ',', y)
         koor_x.append(x+i)
         koor_y.append(y)
-        graphic.plot(koor_x,koor_y)
-        graphic.show()
+    graphic.plot(koor_x,koor_y)
+    graphic.show()
 # ---> Jika ke-2 syarat di atas tidak memenuhi,  maka proses penentuan titik koordinat berlanjut ke:
 #       1. hitung kemiringan garis dengan m = (y2 - y1) / (x2 - x1) 
 #       2. iterasi diulang sebanyak N kali
