@@ -1,7 +1,7 @@
 # Numpy merupakan singkatan Numerical Python yang digunakan dalam memproses array
 # Matplotlib digunakan untuk menggambarkan titik koordinat menjadi sebuah garis
 import numpy as np
-import matplotlib.pyplot as grafik
+import matplotlib.pyplot as graphic
 
 
 x1 = int(input('Masukan Nilai X1  : '))
@@ -35,8 +35,8 @@ elif y1 == y2:
     koor_x = []
     koor_y = []
     for i in range (1,y2,1):
-        grafik.plot(Koor_x,Koor_y)
-        grafik.show()
+        graphic.plot(Koor_x,Koor_y)
+        graphic.show()
 # ---> Jika ke-2 syarat di atas tidak memenuhi,  maka proses penentuan titik koordinat berlanjut ke:
 #       1. hitung kemiringan garis dengan m = (y2 - y1) / (x2 - x1) 
 #       2. iterasi diulang sebanyak N kali
@@ -48,19 +48,19 @@ elif y1 == y2:
 else:
     koor_x = []
     koor_y = []
-    m_kemiringangaris = (y2 - y1) / (x2 - x1)
+    gradient = (y2 - y1) / (x2 - x1)
     # N adalah banyaknya iterasi yang didapatkan dari persamaan dibawah ini apabila  x1 != x2 atau y1 != y2
     N = x2 - x1 + 1
     for i in range (0,N,1):
-        nilai_y = m_kemiringangaris * (x - x1) + y1
-        kordinatY = round(nilai_y)
-        print('Garis yang di lewati oleh titik A da titik B yaitu ', x,',', kordinatY)
+        bulat_y = gradient * (x - x1) + y1
+        koord_Y = round(bulat_y)
+        print('Garis yang di lewati oleh titik A da titik B yaitu ', x,',', koord_Y)
         koor_x.append(x)
-        koor_y.append(kordinatY)
+        koor_y.append(koord_Y)
         x+=1
 # syntaks apppend digunakan untuk menambah item ke dalam array atau list
 # plt.plot digunakan agar mathplotlib dapat membuat titik pertemuan di masing-masing koordinat x,y
 # plt.show digunakan agar mathplotlib dapat menampilkan garis dari titik titik kordinat yang telah di dapat 
 
-    grafik.plot(koor_x,koor_y)
-    grafik.show()
+    graphic.plot(koor_x,koor_y)
+    graphic.show()
