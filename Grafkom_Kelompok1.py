@@ -1,4 +1,4 @@
-# Numpy merupakan singkatan Numerical Python yang digunakan dalam memproses array
+# Numpy merupakan singkatan Numerical Python yang digunakan dalam memproses array... misi ngedit dikit
 # Matplotlib digunakan untuk menggambarkan titik koordinat menjadi sebuah garis
 import numpy as np
 import matplotlib.pyplot as graphic
